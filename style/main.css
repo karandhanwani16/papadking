@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap');
+:root {
+    --primary-color: #ED1B24;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    padding: 24px;
+}
+
+.logo-row {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shree {
+    height: 24px;
+}
+
+.oak {
+    height: 64px;
+}
+
+.pinyo {
+    height: 44px;
+}
+
+.coming-soon {
+    font-family: "Frank Ruhl Libre";
+    width: 100%;
+    margin: 56px 0;
+    font-size: 4rem;
+    text-align: center;
+    color: #3C1515;
+}
+
+p {
+    font-family: "lato";
+    margin: 0;
+}
+
+.contact-us .title {
+    font-size: 2rem;
+    font-family: "lato";
+}
+
+.address {
+    font-size: 1rem;
+    width: 100%;
+    line-height: 150%;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.website,
+.email,
+.phone {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.call-btn {
+    font-family: "lato";
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 14px;
+    margin-top: 24px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.bg-img {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -9;
+}
+
+.bg-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* social media start */
+
+.social-media-cont {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.social-icon {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #F6F5F4;
+    transition: all ease-in-out 0.3s;
+}
+
+.social-icon:hover {
+    background: var(--primary-color);
+}
+
+.social-icon:hover i {
+    color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        padding: 64px;
+        /* overflow: hidden; */
+    }
+    .logo-row {
+        width: 15%;
+    }
+    .pinyo {
+        height: 36px;
+    }
+    .coming-soon {
+        margin: 32px 0;
+        font-size: 8rem;
+        text-align: left;
+    }
+    .contact-us .title {
+        font-size: 1.75rem;
+    }
+    .address {
+        font-size: 1.1rem;
+        width: 30%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .website,
+    .email,
+    .phone {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    .call-btn {
+        width: auto;
+        position: absolute;
+        top: 64px;
+        right: 64px;
+        font-size: 1.1rem;
+        padding: 14px 28px;
+        margin-top: 0;
+    }
+    .bg-img {
+        position: absolute;
+        top: 0%;
+        left: 40%;
+        /* transform: translateX(-50%); */
+        width: 60%;
+        height: 100vh;
+    }
+    .bg-img img {
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        /*  */
+    }
+    /* social media start */
+    .social-media-cont {
+        width: 25%;
+    }
+}
